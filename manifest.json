@@ -1,0 +1,19 @@
+{
+  "name": "Gmail Cleanup",
+  "description": "Clean up Gmail's layouts while still allowing for custom grouping in inboxes.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "clean_gmail": "Click to show an alert"
+  },
+  "permissions": [
+    "webNavigation",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://mail.google.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  }
+}
